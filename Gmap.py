@@ -1,7 +1,7 @@
 import googlemaps
 from datetime import datetime
 
-gmaps = googlemaps.Client(key='AIzaSyDeWftd3gOK8BUQa7TmrMakCMZ5d7AcRDI')
+gmaps = googlemaps.Client(key='')
 
 
 # Geocoding an address
@@ -16,3 +16,5 @@ directions_result = gmaps.directions("Sydney Town Hall",
                                      "Parramatta, NSW",
                                      mode="transit",
                                      departure_time=now)
+
+print(directions_result)
